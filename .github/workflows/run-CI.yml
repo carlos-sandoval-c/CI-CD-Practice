@@ -39,7 +39,7 @@ jobs:
         continue-on-error: true
         with:
           ref: gh-page-report
-          path: gh-pages
+          path: gh-page-report
       - name: Build Allure test report
         uses: simple-elf/allure-report-action@master
         if: always()
