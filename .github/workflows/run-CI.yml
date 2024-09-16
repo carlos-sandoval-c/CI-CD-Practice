@@ -27,7 +27,7 @@ jobs:
           java-version: "8"
           distribution: "corretto"
       - name: Set target browserName in environment variables
-        run: echo "BROWSER_NAME=${{ input.browserName || 'chrome' }}" >> $GITHUB_ENV
+        run: echo "BROWSER_NAME=${{ inputs.browserName || 'CHROME' }}" >> $GITHUB_ENV
       - name: Build using maven
         run: mvn clean
       - name: Run tests
