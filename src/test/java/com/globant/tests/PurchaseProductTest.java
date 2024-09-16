@@ -3,10 +3,12 @@ package com.globant.tests;
 import com.globant.pages.*;
 import com.globant.utils.baseTest.BaseTest;
 import com.globant.utils.persistence.DataPropertiesProvider;
+import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PurchaseProductTest extends BaseTest {
+    @Step("Validate full purchase process")
     @Test(dataProvider = "purchase-data", dataProviderClass = DataPropertiesProvider.class)
     public void verifySuccessfulPurchase(String firstName, String lastName, String zipCode) {
         InventoryPage inventoryPage = super.loadInventoryPage();
