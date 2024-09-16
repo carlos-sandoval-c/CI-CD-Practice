@@ -1,7 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="SauceDemo Suite">
     <parameter name="url" value="https://www.saucedemo.com/"/>
-    <parameter name="browser" value="chrome"/>
     <parameter name="username" value="standard_user"/>
     <parameter name="password" value="secret_sauce"/>
     <test name="Successful Purchase">

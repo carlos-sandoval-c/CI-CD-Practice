@@ -33,15 +33,15 @@ public class BaseTest {
     }
 
     @BeforeTest()
-    @Parameters({"browser", "url"})
-    protected void setupDriver(String browser, String url) throws NullPointerException, IllegalArgumentException {
-        if (browser == null || url == null)
+    @Parameters({"url"})
+    protected void setupDriver(String url) throws NullPointerException, IllegalArgumentException {
+        if (url == null)
             throw new NullPointerException("BaseTest - SetupDriver: Parameters are null");
         else if (url.isEmpty())
             throw new IllegalArgumentException("BaseTest - SetupDriver: Empty URL");
 
         DataPropertiesProvider.loadProperties();
-        this.driverManager = new DriverManager(browser);
+        this.driverManager = new DriverManager();
         this.driverManager.maximizeWindow();
         this.navigateTo(url);
     }
