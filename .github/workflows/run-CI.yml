@@ -44,7 +44,7 @@ jobs:
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          gh_pages: gh-pages
+          gh_pages: gh-page-report
           allure_report: allure-report
           allure_history: allure-history
           allure_results: ${{ vars.ALLURE_RESULTS_PATH }}
@@ -52,7 +52,7 @@ jobs:
         if: always()
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          target_branch: gh-pages
+          target_branch: gh-page-report
           build_dir: allure-history
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
