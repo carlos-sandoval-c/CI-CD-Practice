@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Sep 16 23:45:33 GMT 2024","Mon Sep 16 23:45:34 GMT 2024","663","SauceDemo Suite","Successful Logout","com.globant.tests.LogoutTest","com.globant.tests.LogoutTest","verifySuccessfulLogout","verifySuccessfulLogout",""
+"passed","Mon Sep 16 23:45:32 GMT 2024","Mon Sep 16 23:45:32 GMT 2024","394","SauceDemo Suite","Cart Management","com.globant.tests.CartManagementTest","com.globant.tests.CartManagementTest","verifyProductAddAndRemove","verifyProductAddAndRemove",""
+"passed","Mon Sep 16 23:45:30 GMT 2024","Mon Sep 16 23:45:31 GMT 2024","1007","SauceDemo Suite","Successful Purchase","com.globant.tests.PurchaseProductTest","com.globant.tests.PurchaseProductTest","verifySuccessfulPurchase","verifySuccessfulPurchase",""
