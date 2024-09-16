@@ -31,4 +31,4 @@ jobs:
       - name: Build using maven
         run: mvn clean
       - name: Run tests
-        run: mvn -DbrowserName=${{ BROWSER_NAME }} verify
+        run: mvn -DbrowserName=$BROWSER_NAME verify
